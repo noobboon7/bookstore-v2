@@ -1,5 +1,5 @@
 type Book
-  # creates a model on dynamoDB
+  # creates a table,CRUD on dynamoDB
 	@model(subscriptions: null)
 	@auth(
 		rules: [
