@@ -3,9 +3,10 @@ import { AmplifyAuthenticator } from '@aws-amplify/ui-react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import CheckoutForm from "../components/CheckoutForm";
+const STRIPE_API = process.env.STRIPE_API_ENDPOINT;
 
 const Checkout = () => {
-    const stripePromise = loadStripe('<stripe_public_key>');
+    const stripePromise = loadStripe(STRIPE_API);
 
     return (
         <section className="checkout-wrapper">

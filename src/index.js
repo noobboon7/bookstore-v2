@@ -4,6 +4,7 @@ import { BookProvider } from "./context/books";
 import App from './App';
 import './index.css';
 import { CartProvider } from './context/cart';
+require("dotenv").config();
 
 ReactDOM.render(
   <BookProvider>
